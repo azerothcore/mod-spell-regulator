@@ -6,7 +6,7 @@ index 28e7c390..c8d61cd3 100644
  #include "ArenaSpectator.h"
  #include "DynamicVisibility.h"
  #include "AccountMgr.h"
-+#include "../../../modules/mod-spellregulator/src/SpellRegulator.h"
++#include "../../../modules/mod-spell-regulator/src/SpellRegulator.h"
  
  #ifdef ELUNA
  #include "LuaEngine.h"
@@ -46,7 +46,7 @@ index 3a18aaf7..305be1db 100644
  #include "WardenCheckMgr.h"
  #include "WaypointManager.h"
  #include "GameGraveyard.h"
-+#include "../../../modules/mod-spellregulator/src/SpellRegulator.h"
++#include "../../../modules/mod-spell-regulator/src/SpellRegulator.h"
  
  class reload_commandscript : public CommandScript
  {
