@@ -9,7 +9,7 @@ public:
 		return &instance;
 	}
 
-	void Regulate(uint32& damage, uint32 spellId)
+	void Regulate(Unit*, uint32& damage, uint32 spellId)
 	{
 		if (RegulatorContainer.find(spellId) == RegulatorContainer.end())
 			return;
