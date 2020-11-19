@@ -1,5 +1,6 @@
 #pragma once
 #include "Unit.h"
+#include "QueryResult.h"
 
 class SpellRegulator
 {
