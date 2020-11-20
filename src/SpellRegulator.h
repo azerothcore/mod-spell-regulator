@@ -2,6 +2,7 @@
 #include "Unit.h"
 #include "QueryResult.h"
 #include "WorldDatabase.h"
+#include "DatabaseEnv.h"
 
 class SpellRegulator
 {
