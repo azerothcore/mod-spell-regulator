@@ -1,8 +1,8 @@
 #pragma once
 #include "Unit.h"
 #include "QueryResult.h"
-#include "WorldDatabase.h"
 #include "DatabaseEnv.h"
+#include "ScriptMgr.h"
 
 class SpellRegulator
 {
