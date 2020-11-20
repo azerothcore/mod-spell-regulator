@@ -1,5 +1,4 @@
 #pragma once
-#include "Unit.h"
 #include "QueryResult.h"
 #include "DatabaseEnv.h"
 #include "ScriptMgr.h"
