@@ -23,6 +23,8 @@ jobs:
         with:
           submodules: 'recursive'
           path: 'modules/mod-spell-regulator'
+      - name: Apply core patch
+        run: git apply modules/mod-spell-regulator/SpellRegulator.patch
       - name: Cache
         uses: actions/cache@v1.1.2
         with:
