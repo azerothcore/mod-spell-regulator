@@ -1,6 +1,9 @@
-# ViperDev Modules
-
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+## mod-spell-regulator
 ### This is a module for [AzerothCore](http://www.azerothcore.org)
+- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-spell-regulator/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-spell-regulator)
+
+## ViperDev Modules
 
 #### Features:
 - Modify the percentage of the spells by regulating in the best way.

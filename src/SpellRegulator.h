@@ -1,4 +1,7 @@
 #pragma once
+#include "QueryResult.h"
+#include "DatabaseEnv.h"
+#include "ScriptMgr.h"
 
 class SpellRegulator
 {
