@@ -1,6 +1,6 @@
 #pragma once
-#include "QueryResult.h"
 #include "DatabaseEnv.h"
+#include "QueryResult.h"
 #include "ScriptMgr.h"
 
 class SpellRegulator
@@ -16,7 +16,6 @@ public:
 	{
 		if (RegulatorContainer.find(spellId) == RegulatorContainer.end())
 			return;
-
 
 		float val = RegulatorContainer[spellId];
 
@@ -36,7 +35,8 @@ public:
 			return;
 
 		uint32 count = 0;
-		do{
+		do
+        {
 			Field* fields = result->Fetch();
 			RegulatorContainer[fields[0].Get<uint32>()] = fields[1].Get<float>();
 			++count;
@@ -53,7 +53,9 @@ private:
 class RegulatorLoader : public WorldScript
 {
 public:
-	RegulatorLoader() : WorldScript("SpellRegulatorLoader") {}
+	RegulatorLoader() : WorldScript("SpellRegulatorLoader", {
+        WORLDHOOK_ON_STARTUP
+    }) {}
 
 	void OnStartup() override
 	{
