@@ -23,5 +23,5 @@ CREATE TABLE `spellregulator` (
   `spellId` int(11) unsigned NOT NULL,
   `percentage` float NOT NULL DEFAULT '100',
   PRIMARY KEY (`spellId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 SET FOREIGN_KEY_CHECKS=1;

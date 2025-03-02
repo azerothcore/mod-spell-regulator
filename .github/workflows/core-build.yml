@@ -16,19 +16,19 @@ jobs:
     env:
       COMPILER: ${{ matrix.compiler }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: 'azerothcore/azerothcore-wotlk'
           ref: 'master'
           submodules: 'recursive'
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
           path: 'modules/mod-spell-regulator'
       - name: Apply core patch
         run: git apply modules/mod-spell-regulator/SpellRegulator.patch
       - name: Cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v4
         with:
           path: /home/runner/.ccache
           key: ccache:${{ matrix.compiler }}:${{ github.ref }}:${{ github.sha }}
@@ -39,8 +39,6 @@ jobs:
         run: source ./apps/ci/ci-install.sh
         env:
           CONTINUOUS_INTEGRATION: true
-      - name: Import db
-        run: source ./apps/ci/ci-import-db.sh
       - name: Build
         run: source ./apps/ci/ci-compile.sh
       - name: Dry run
