@@ -1,6 +1,6 @@
 #include "SpellRegulator.h"
 
-void AddSC_SpellRegulator()
+void Addmod_spell_regulatorScripts()
 {
 	new RegulatorLoader;
 }
